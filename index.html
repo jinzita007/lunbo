@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>ajax调取轮播图</title>
+    <!--mui自带的js文件-->
+    <script src="js/mui.min.js"></script>
+    <!--引入jquery文件-->
+    <script src="js/jquery-2.1.0.js"></script>
+    <!--引入轮播图js文件-->
+    <script src="js/lunbo.js"></script>
+    <!--引入mui自带的css文件-->
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<!--头部开始-->
+	<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">图片轮播</h1>
+		</header>
+	<!--头部结束-->
+		<!--轮播图开始-->
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop" >
+			        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="">
+					</a>
+				</div>
+					<!--第一张图片-->
+					<div class="mui-slider-item lunbo_a1">
+						<a href="#">
+							<img class="goods_img" src="" />
+						</a>
+					</div>
+					<!--第二张图片-->
+                   <div class="mui-slider-item lunbo_a2">
+						<a href="#" style="text-align:center">
+							<img class="goods_img" src="" />
+						</a>
+					</div>
+					<!--第三张图片-->
+					<div class="mui-slider-item lunbo_a3">
+						<a href="#">
+							<img class="goods_img" src="" />
+						</a>
+					</div>
+                <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="">
+					</a>
+				</div>
+				</div>
+				
+				<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+			</div>
+		</div>
+		<!--	轮播图结束-->
+</body>
+</html>
